@@ -20,6 +20,12 @@ $margin: 0 50px;
     
 }
 
+@mixin place-holder {
+	color: gray;
+	font-style: italic;
+
+}
+
 @mixin transparent-text {
 
 	background-color:#fff; overflow:hidden;
@@ -337,19 +343,22 @@ table {
 
 }
 .form-control::-webkit-input-placeholder {
-   color: red;
+	@include place-holder;
+
 }
+   
+
 
 .form-control:-moz-placeholder { /* Firefox 18- */
-   color: red;  
+  @include place-holder; 
 }
 
 .form-control::-moz-placeholder {  /* Firefox 19+ */
-   color: red;  
+   @include place-holder;
 }
 
 .form-control:-ms-input-placeholder {  
-   color: red;  
+  @include place-holder; 
 }
 textarea {
 	

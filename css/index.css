@@ -240,18 +240,22 @@ table {
   margin: 5px 0; }
 
 .form-control::-webkit-input-placeholder {
-  color: red; }
+  color: gray;
+  font-style: italic; }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: red; }
+  color: gray;
+  font-style: italic; }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: red; }
+  color: gray;
+  font-style: italic; }
 
 .form-control:-ms-input-placeholder {
-  color: red; }
+  color: gray;
+  font-style: italic; }
 
 textarea {
   height: 150px;
